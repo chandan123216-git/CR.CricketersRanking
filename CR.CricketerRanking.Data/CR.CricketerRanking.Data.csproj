@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="Dapper.ParameterExtensions" Version="2018.12.7.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CR.CricketerRanking.Common\CR.CricketerRanking.Common.csproj" />
+    <ProjectReference Include="..\CR.CricketerRanking.Type\CR.CricketerRanking.Type.csproj" />
+  </ItemGroup>
+
+</Project>

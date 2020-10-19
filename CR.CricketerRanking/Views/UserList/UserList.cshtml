@@ -1,0 +1,88 @@
+﻿@model UserListModel
+ 
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="~/Script/UserList.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title></title>
+</head>
+<body>
+    <h1 class="text-center h3 mb-3 font-weight-normal">Cricketers List</h1><br>
+    <div class="row">
+        <div class="col-5" id="divbatsman">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">SR. NO.</th>
+                        <th scope="col">Batsman Name</th>
+                        <th scope="col">Ranking </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var batsman in Model.Batsman)
+                    {
+                        <tr>
+                            <td>@(Model.Batsman.IndexOf(batsman)+1)</td>
+                            <td>@batsman.Firstname @batsman.Lastname</td>
+                            <td><input type="checkbox" id="chk_@batsman.UserID" class="chkbatsman" name="batsman" value="@batsman.UserID" onchange="userlistModule.CountBatsmanCheckbox()"></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-5" id="divbowler" style="margin-left: 170px !important;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">SR. NO.</th>
+                        <th scope="col">Bowler Name</th>
+                        <th scope="col">Ranking </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var bowler in Model.Bowler)
+                    {
+                        <tr>
+                            <td>@(Model.Bowler.IndexOf(bowler)+1)</td>
+                            <td>@bowler.Firstname @bowler.Lastname</td>
+                            <td><input type="checkbox" id="chk_@bowler.UserID" value="@bowler.UserID" class="chkbowler" name="bowler" onchange="userlistModule.CountBowlerCheckbox()"></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4" style="margin-left: 80px !important;">
+            <input class="btn btn-lg btn-primary" type="button" onclick="userlistModule.OnBatsmanSubmit()" name="Submit" value="Submit Batsman">
+        </div>
+        <div class="col-3" style="margin-left: 20px !important;">
+            <a class="btn btn-lg btn-primary" name="Back" value="Back" href="/CricktersPoll">Back</a>
+        </div>
+
+        <div class="col-1" style="margin-left: 1px !important;">
+            <input class="btn btn-lg btn-primary " type="button" onclick="userlistModule.OnBowlerSubmit()" name="Submit" value="Submit Bowler">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

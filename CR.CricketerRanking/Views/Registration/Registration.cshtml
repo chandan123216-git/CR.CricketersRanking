@@ -1,0 +1,98 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Register</title>
+    <!-- Registration.js -->
+    <script src="~/Script/Registration.js"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+   
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container-fluid">
+        <section class=" row justify-content-center">
+            <section class="col-2 col-md-5 col-sm-6 ">
+
+                <h1 class="text-center h3 mb-3 font-weight-normal">Registration</h1><br>
+                <form>
+                    <div class="form-label">
+                        <label for="username">Username</label>
+                        <input type="text" id="idUsername" class="form-control" required autofocus>
+                    </div>
+                    <br>
+                    <div class="form-label-group">
+                        <label for="inputPassword">Password</label>
+                        <input type="password" id="idPassword" class="form-control" required autofocus>
+                    </div>
+                    <br>
+                    <div class="form-label-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" id="idFirstname" class="form-control" required autofocus>
+                    </div>
+                    <br>
+                    <div class="form-label-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" id="idLastname" class="form-control" required autofocus>
+                    </div>
+                    <br>
+                    <button class="btn btn-lg btn-primary btn-block" data-toggle="model" data-target="exampleModalCenter1" onclick="registrationModule.registerUser()">Registers</button><br>
+                    <a class="btn btn-lg btn-primary" style="margin-left: 180px !important;" name="Back" value="Back" href="/Login">Back</a>
+                   
+<!-- Button trigger modal 
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
+
+ Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </form>
+            </section>
+
+        </section>
+    </section>
+    
+    <script>
+    </script>
+</body>
+</html>
+
+
