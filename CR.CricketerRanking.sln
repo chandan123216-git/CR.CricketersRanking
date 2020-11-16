@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CR.CricketerRanking", "CR.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CR.CricketerRanking.Data", "CR.CricketerRanking.Data\CR.CricketerRanking.Data.csproj", "{DAE8CC68-C681-4C3D-B5B6-FF89FEE108CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.CricketerRanking.Type", "CR.CricketerRanking.Type\CR.CricketerRanking.Type.csproj", "{5A2941BE-99F7-4548-9A15-629D6F233EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CR.CricketerRanking.Type", "CR.CricketerRanking.Type\CR.CricketerRanking.Type.csproj", "{5A2941BE-99F7-4548-9A15-629D6F233EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.CricketerRanking.Common", "CR.CricketerRanking.Common\CR.CricketerRanking.Common.csproj", "{42BE37AA-151E-417B-A16D-1BDBE75378BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CR.CricketerRanking.Common", "CR.CricketerRanking.Common\CR.CricketerRanking.Common.csproj", "{42BE37AA-151E-417B-A16D-1BDBE75378BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CR.CricketerRanking.Service", "CR.CricketerRanking.Service\CR.CricketerRanking.Service.csproj", "{360ACD01-BC5C-48FE-A823-C13FD0E90219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CR.CricketerRanking.Service", "CR.CricketerRanking.Service\CR.CricketerRanking.Service.csproj", "{360ACD01-BC5C-48FE-A823-C13FD0E90219}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using CR.CricketerRanking.Data.Contract;
+using CR.CricketerRanking.Data.Contract;
 using CR.CricketerRanking.Type.Types;
 using Dapper;
 using System;
@@ -23,7 +23,7 @@ namespace CR.CricketerRanking.Data.Implement
             using (SqlConnection con = new SqlConnection(ConString))
             {
                 var query = $@"SELECT u.* FROM [User] u
-                            JOIN [UserRole] ur ON u.UserID = ur.UserID 
+                            JOIN [UserRole] ur ON u.UserID = ur.UserID                                                                        
                             JOIN [Role] r ON r.RoleID = ur.RoleID
                             WHERE r.RoleID = 1
                             AND u.IsActive = 1";
